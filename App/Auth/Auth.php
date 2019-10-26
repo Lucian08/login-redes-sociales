@@ -28,7 +28,7 @@
 
         self::storeUser($service, $userProfile);
 
-        //redirect user
+        
         header('Location: index.php');
       }
     }
@@ -64,7 +64,7 @@
       self::login($user);
 
     }
-
+    //ESTA FUNCIÓN VERFICA QUE EL USARIO EXISTA EN LA DB
     protected static function getExistingUser($socialUser, $db)
     {
       $ps = $db->prepare("SELECT id, name, email FROM users WHERE email = :email");
@@ -77,6 +77,7 @@
       return $result ? $result[0] : null;
     }
 
+    //HACE EL INSERT INTO EN LA TABLA user_social SEGUN EL USUARIO NUEVO QUE SE AGREGO
     protected static function storeUserSocial($user, $socialUser, $service, $db)
     {
       $ps = $db->prepare("INSERT INTO users_social (user_id, social_id, service) VALUES(:user_id, :social_id, :service)");

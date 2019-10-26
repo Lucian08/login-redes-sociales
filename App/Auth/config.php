@@ -29,10 +29,10 @@
         "scope" => "email"
       ),
       "Google" => array(
-        "enabled" => false,
+        "enabled" => true,
         "keys" => array(
-          "id" => "464388912750-qldtvl07da8ercqdp4b6v142b3milgcv.apps.googleusercontent.com",
-          "secret" => "gC_U_uoCXijyOdMpGTwHhsFe"
+          "id" => "464388912750-t97qqkc9nmnq051pamiam7kmvualur01.apps.googleusercontent.com",
+          "secret" => "pkDilQ2BOXehkcx-hD44mKME"
         )
       )
     )
