@@ -10,7 +10,7 @@
     // estos son los servicios a los cuales vamos a poder conectarnos mediante esta aplicacion
     "providers" => array(
       "Twitter" => array(
-        "enabled" => false,//VALIDA SI QUEREMOS QUE EL INICIO DE SESION CON ESTA RED SOCIAL ESTE HABILITADA
+        "enabled" => true,//VALIDA SI QUEREMOS QUE EL INICIO DE SESION CON ESTA RED SOCIAL ESTE HABILITADA
         // AQUI SE RECORRERAN LA KEYS QUE NOS PROPORCIONARA TWITTER
         "keys" => array( 
           "key" => "",
